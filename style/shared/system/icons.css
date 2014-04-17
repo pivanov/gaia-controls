@@ -1,0 +1,63 @@
+/* default icons */
+:root {
+  --icon-add: url(images/icons/default/add.png);
+  --icon-edit: url(images/icons/default/edit.png);
+  --icon-back: url(images/icons/default/back.png);
+  --icon-close: url(images/icons/default/close.png);
+  --icon-menu: url(images/icons/default/menu.png);
+}
+
+/* skin organic & styleguide  icons */
+.skin-organic,
+.skin-styleguide {
+  --icon-add: url(images/icons/organic/add.png);
+  --icon-edit: url(images/icons/organic/edit.png);
+  --icon-back: url(images/icons/organic/back.png);
+  --icon-close: url(images/icons/organic/close.png);
+  --icon-menu: url(images/icons/organic/menu.png);
+}
+
+/* icons */
+.icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
+}
+
+.icon {
+  position: relative;
+  font-size: 0;
+}
+
+.icon-add:before {
+  background-image: var(--icon-add);
+}
+
+.icon-edit:before {
+  background-image: var(--icon-edit);
+}
+
+.icon-back:before {
+  background-image: var(--icon-back);
+}
+
+.icon-close:before {
+  background-image: var(--icon-close);
+}
+
+.icon-menu:before {
+  background-image: var(--icon-menu);
+}
+
+/* states */
+.icon-disabled {
+  opacity: 0.5;
+}
+

@@ -1,0 +1,115 @@
+/*
+modules.css
+
+A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components. Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a standalone component.
+*/
+
+
+/*
+BUTTONS
+=================
+*/
+
+
+.btn {
+  display: inline-block;
+  height: 50rem;
+  padding: 0rem 25rem;
+  color: var(--color-root-alpha);
+  font-size: var(--font-medium);
+  font-weight: lighter;
+  font-style: italic;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
+  border-radius: 25rem;
+  background: var(--color-root-beta);
+}
+
+.btn:active {
+  color: var(--color-root-beta);
+  border: 1px solid var(--color-root-delta);
+  background-color: var(--color-root-delta);
+}
+
+.btn-rectangle {
+  border-radius: 0rem;
+}
+
+.btn-circle {
+  width: 60rem;
+  height: 60rem;
+  border-radius: 30rem;
+}
+
+
+/*
+INPUT
+=================
+*/
+
+.input {
+  box-sizing: border-box;
+  min-height: 40rem;
+  margin: 0rem 0rem var(--dim-small) 0rem;
+  padding: 0rem var(--dim-small);
+  color: var(--color-root-alpha);
+  font-size: var(--font-medium);
+  border: 1rem solid #d6d6d6;
+  background: var(--color-root-beta);
+}
+
+.input::-moz-placeholder {
+  color: #909ca7;
+  font-weight: lighter;
+  font-style: italic;
+}
+.input:focus {
+  border-bottom: 3rem solid var(--color-root-alpha);
+}
+.input-label {
+  display: block;
+  margin: 0 0 4rem var(--dim-small);
+  font-size: var(--font-small);
+}
+
+/*
+MENU
+=================
+*/
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.menu-item {
+  box-sizing: border-box;
+  padding: var(--dim-small) var(--dim-small);
+  color: var(--color-root-gamma);
+  list-style: none;
+  border-bottom: 1rem solid var(--color-root-theta);
+}
+.menu-item:active {
+  background: var(--color-root-theta);
+}
+
+/*
+TABS
+=================
+*/
+.tabs {
+  margin: 0;
+  padding: 0;
+  background: var(--color-root-beta);
+}
+.tabs-item {
+  box-sizing: border-box;
+  height: var(--dim-medium);
+  color: var(--color-root-epsilon);
+  font-size: var(--font-medium);
+  line-height: var(--dim-medium);
+  list-style: none;
+  text-align: center;
+}
+.tabs-item:active {
+  background: var(--color-root-iota);
+}
+

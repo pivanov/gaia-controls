@@ -1,0 +1,15 @@
+/*
+ * Skin Comms
+ */
+
+.skin-comms {
+  --header-font-color: var(--color-root-beta);
+  --header-link-color: rgba(0, 0, 0, 0.5);
+  --header-action-hover-active-state-background-color: rgba(0, 0, 0, .1);
+  --header-background-color: #33cccc;
+
+  --subheader-font-color: var(--color-root-gamma);
+  --subheader-border-color: var(--color-root-theta);
+  --subheader-background-color: transparent;
+}
+

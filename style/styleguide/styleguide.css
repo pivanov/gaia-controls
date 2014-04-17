@@ -1,15 +1,4 @@
-
-
-.header-styleguide {
-    background-color: var(--color-root-beta);
-}
-.header-styleguide  .title {
-    color: var(--color-brand-darkorange);
-}
-.header-styleguide .header-btn {
-    color: var(--color-root-alpha);
-}
-.header-styleguide .header-btn:active {
-    background-color: var(--color-root-iota);
-}
+/*
+ * Styleguide Styles
+ */
 

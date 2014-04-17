@@ -1,0 +1,15 @@
+/*
+ * Skin Default
+ */
+
+:root {
+  --header-font-color: var(--color-root-beta);
+  --header-link-color: rgba(0, 0, 0, 0.6);
+  --header-action-hover-active-state-background-color: rgba(0, 0, 0, .07);
+  --header-background-color: #f97c17;
+
+  --subheader-font-color: var(--color-root-gamma);
+  --subheader-border-color: var(--color-root-theta);
+  --subheader-background-color: transparent;
+}
+

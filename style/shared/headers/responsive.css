@@ -1,0 +1,20 @@
+/*
+ * Rotation support
+ */
+
+@media screen and (orientation: landscape) {
+
+  .bb-header {
+    height: 3.7rem;
+    line-height: 3.7rem;
+  }
+
+  .bb-header .action {
+    line-height: 3.5rem;
+  }
+
+  .bb-subheader h2 {
+    line-height: .9rem;
+  }
+}
+

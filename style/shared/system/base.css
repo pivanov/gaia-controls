@@ -1,0 +1,100 @@
+/*
+base.css
+
+Base rules are the defaults. They are almost exclusively single element selectors but it could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors. Essentially, a base style says that wherever this element is on the page, it should look like this.
+
+Base styles include setting heading sizes, default link styles, default font styles, and body backgrounds. There should be no need to use !important in a Base style.
+
+CSS variable definitions are also defined here.
+*/
+
+@import url('icons.css');
+
+/*
+VARIABLES
+=================
+*/
+
+:root {
+    /* base colors */
+  --color-root-alpha: #333;
+  --color-root-beta: #fff;
+  --color-root-gamma: #4d4d4d;
+  --color-root-delta: #5f5f5f;
+  --color-root-epsilon: #858585;
+  --color-root-zeta: #a6a6a6;
+  --color-root-eta: #c7c7c7;
+  --color-root-theta: #e7e7e7;
+  --color-root-iota: #f4f4f4;
+    /* base dimensions */
+  --dim-micro: 6rem;
+  --dim-milli: 12rem;
+  --dim-small: 16rem;
+  --dim-medium: 45rem;
+  --dim-large: 50rem;
+  --dim-mega: 60rem;
+    /* base font sizes */
+  --font-small: 14rem;
+  --font-medium: 17rem;
+  --font-large: 23rem;
+}
+
+
+/*
+TYPE
+===================
+*/
+h1,.alpha {
+  color: var(--color-root-gamma);
+  font-size: var(--font-large);
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 26rem;
+}
+
+h2,.beta {
+  color: var(--color-root-gamma);
+  font-size: var(--font-medium);
+}
+
+h3,.gamma {
+  color: var(--color-root-gamma);
+  font-size: var(--font-small);
+  font-weight: normal;
+  font-style: bold;
+  text-transform: uppercase;;
+}
+
+
+
+
+
+/* font styles larger than h1 */
+
+
+
+
+/* font style smaller than regular */
+
+
+/* base font */
+* {
+  color: var(--color-root-epsilon);
+  font-family: 'FiraSans';
+  font-size: var(--font-medium);
+  font-weight: normal;
+  line-height: 19rem;
+}
+
+
+/*
+TAGS
+===================
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+  background-color: var(--color-root-iota);
+}
+

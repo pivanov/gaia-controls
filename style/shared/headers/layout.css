@@ -1,0 +1,156 @@
+/*
+ * Defaults & name spaces definition
+ */
+
+.bb-header {
+  position: relative;
+  height: 50rem;
+  padding: 0;
+  line-height: 50rem;
+  border: none;
+  background-color: var(--header-background-color);
+  z-index: 10;
+  align-items: center;
+}
+
+.bb-header h1 {
+  -moz-box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0 2rem;
+  color: var(--header-font-color);
+  font-size: 25rem;
+  font-weight: lighter;
+  line-height: 50rem;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bb-header h1 em {
+  font-size: 15rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1em;
+}
+
+/*
+ * Default actions style
+ */
+
+.bb-header .bb-action {
+  -moz-box-sizing: border-box;
+  float: left;
+  position: relative;
+  width: 50rem;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  color: var(--header-link-color);
+  font-size: 15rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+  text-shadow: none;
+  z-index: 3;
+}
+
+.bb-header .bb-action:before,
+.bb-header .bb-menu .bb-action { /* Enable transitions */
+  transition: background-color .2s ease;
+}
+
+.bb-header .bb-action:hover,
+.bb-header .bb-action:active { /* Pressed state */
+  background-color: var(--header-action-hover-active-state-background-color);
+}
+
+.bb-header .bb-action::-moz-focus-inner { /* Fixes extra spaces on Gecko */
+  padding: 0;
+}
+
+.bb-header .bb-action::-moz-focus-inner,
+.bb-header .bb-action:active,
+.bb-header .bb-action:focus {
+  border: none; /* Overrides dotted lines in a pressed state */
+  outline: none;
+}
+
+.bb-header .bb-action[aria-disabled] {
+  pointer-events: none; /* Disabled state */
+  opacity: .5;
+}
+
+/*
+ * Actions inside toolbar
+ */
+
+.bb-header .bb-menu {
+  float: right;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+
+.bb-header .bb-menu .bb-action {
+  width: auto;
+  min-width: 50rem;
+  height: inherit;
+  padding: 0 10rem;
+}
+
+/*
+ * Subheader
+ */
+
+.bb-subheader {
+  height: auto;
+  text-align: left;
+  border-bottom: solid .1rem var(--subheader-border-color);
+  background-color: var(--subheader-background-color);
+  z-index: 0;
+}
+
+.bb-subheader h2 {
+  margin: 0;
+  padding: 8rem 30rem;
+  color: var(--subheader-font-color);
+  font-size: 15rem;
+  font-weight: 400;
+  line-height: 18rem;
+}
+
+/*
+ * Icons
+ */
+
+.bb-header .icon {
+  font-size: 0;
+}
+
+/*
+ * Right to left tweaks
+ */
+
+html[dir='rtl'] .bb-header .bb-menu {
+  float: left;
+}
+
+html[dir='rtl'] .bb-header .bb-action {
+  float: right;
+}
+
+html[dir='rtl'] .bb-subheader {
+  text-align: right;
+}
+

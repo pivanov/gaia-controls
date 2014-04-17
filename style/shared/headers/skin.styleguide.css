@@ -1,0 +1,15 @@
+/*
+ * Skin Default
+ */
+
+.skin-styleguide {
+  --header-font-color: var(--color-brand-darkorange);
+  --header-link-color: var(--color-root-alpha);
+  --header-action-hover-active-state-background-color: var(--color-root-iota);
+  --header-background-color: var(--color-root-theta);
+
+  --subheader-font-color: var(--color-root-gamma);
+  --subheader-border-color: var(--color-root-theta);
+  --subheader-background-color: #dedede;
+}
+

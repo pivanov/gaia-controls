@@ -1,0 +1,15 @@
+/*
+ * Skin Dark
+ */
+
+.skin-dark {
+  --header-font-color: var(--color-root-beta);
+  --header-link-color: #00AAC5;
+  --header-action-hover-active-state-background-color: rgba(0, 0, 0, .4);
+  --header-background-color: #242D33;
+
+  --subheader-font-color: var(--color-root-beta);
+  --subheader-border-color: transparent;
+  --subheader-background-color: #2C353B;
+}
+

@@ -1,0 +1,175 @@
+/*
+gaia.css
+
+Theme file for Gaia specific styles.
+
+Gaia apps also have a sub-theme for each class of application in addition to defaults:
+* Media
+* Settings
+* Productivity
+* Communications
+
+About theme files:
+Themes can affect any of the primary types. They can override base styles like default link colours. They can change module elements such as colours and borders. They can affect layout with different arrangements. They can also alter how states look.
+
+Themed CSS variables are also defined here.
+*/
+
+
+/*
+GAIA THEME
+===================
+*/
+
+/* variables */
+:root {
+  --color-brand-darkblue: #00539f;
+  --color-brand-blue: #00caf2;
+  --color-brand-turquoise: #27c8c2;
+  --color-brand-darkorange: #e66000;
+  --color-brand-orange: #ff9500;
+  --color-brand-yellow: #ffcb00;
+  --color-brand-violet: #c40c84;
+  --color-brand-alpha: #00aac5;
+  --color-brand-beta: #00caf2;
+  --color-brand-gamma: #b2f2ff;
+}
+
+
+
+/*  fonts */
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: 300; /* lighter */
+  src: url('../fonts/FiraSans-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: 300; /* lighter */
+  font-style: italic;
+  src: url('../fonts/FiraSans-LightItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: normal; /* 400 */
+  font-style: normal;
+  src: url('../fonts/FiraSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans Regular Italic';
+  font-weight: normal; /* 400 */
+  src: url('../fonts/FiraSans-RegularItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: bold; /* 700 */
+  src: url('../fonts/FiraSans-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: bold; /* 700 */
+  font-style: italic;
+  src: url('../fonts/FiraSans-MediumItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: 800; /* bolder */
+  src: url('../fonts/FiraSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-weight: 800; /* bolder */
+  font-style: italic;
+  src: url('../fonts/FiraSans-BoldItalic.woff') format('woff');
+}
+
+
+
+/*
+COMPONENTS
+------------------------
+*/
+
+/* input */
+.input:focus {
+  border: 1rem solid #d6d6d6;
+  border-bottom: 3rem solid var(--color-brand-blue);
+}
+
+/* buttons */
+.btn:active {
+  border: 1rem solid var(--color-brand-blue);
+  background-color: var(--color-brand-blue);
+}
+
+/* menu */
+.menu {
+  padding: 0 var(--dim-small);
+}
+.menu-item {
+  position: relative;
+  padding: var(--dim-small) 0;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.menu-item:active:after {
+  content: ' ';
+  position: absolute;
+  top: -1rem;
+  left: calc(var(--dim-small) * -1);
+  width: calc(100% + var(--dim-small) * 2);
+  height: calc(100% + 2rem);
+  background: var(--color-root-theta);
+  z-index: -1;
+}
+
+/*
+COMMS THEME
+------------------------
+*/
+
+/* tabs */
+.skin-comms .tabs-is-selected {
+  color: var(--color-brand-turquoise);
+  border-bottom: 3rem solid var(--color-brand-turquoise);
+}
+
+
+/*
+MEDIA THEME
+------------------------
+*/
+
+/* tabs*/
+.skin-dark .tabs {
+  color: var(--color-root-beta);
+  background: var(--color-root-alpha);
+}
+.skin-dark .tabs-item {
+  color: var(--color-root-beta);
+}
+.skin-dark .tabs-item:active {
+  background: #242424;
+}
+.skin-dark .tabs-is-selected {
+  color: var(--color-brand-alpha);
+  border-bottom: 3rem solid var(--color-brand-alpha);
+}
+.skin-dark .tabs-is-selected:active {
+  background: transparent;
+}
+
+/* menu */
+.skin-dark .menu {
+  background: var(--color-root-alpha);
+}
+.skin-dark .menu-item {
+  color: var(--color-root-beta);
+  font-weight: normal;
+  border-bottom: 1rem solid #3b3b3b;
+}
+.skin-dark .menu-item:active:after {
+  background: #242424;
+}
+

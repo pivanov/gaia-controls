@@ -2,39 +2,41 @@
 apps.css
 
 These are app specific styles that do not exist and are not reused anywhere else.
+*/
 
 
+/*
 CONTACTS
 ===================
 */
 
 .contact {
-    padding: var(--dim-micro) 0;
+  padding: var(--dim-micro) 0;
 }
 .contact-info {
-    padding-top: var(--dim-micro);
+  padding-top: var(--dim-micro);
 }
 .contact .first,
 .contact .last {
-    font-size: var(--font-medium);
-    color: var(--color-root-gamma);
+  color: var(--color-root-gamma);
+  font-size: var(--font-medium);
 }
 .contact .first {
-    font-weight: bold;
+  font-weight: bold;
 }
 .contact .last {
-    font-weight: normal;
+  font-weight: normal;
 }
 .contact .company {
-    font-size: var(--font-small);
+  font-size: var(--font-small);
 }
 .contact .thumb {
-    display: block;
-    width: calc(var(--dim-large) - 2rem);
-    height: calc(var(--dim-large) - 2rem);
-    border-radius: calc(var(--dim-large) / 2);
-    border: 1rem solid #dddddd;
-    background: #fff;
+  display: block;
+  width: calc(var(--dim-large) - 2rem);
+  height: calc(var(--dim-large) - 2rem);
+  border: 1rem solid #ddd;
+  border-radius: calc(var(--dim-large) / 2);
+  background: #fff;
 }
 
 /*
@@ -42,10 +44,11 @@ MEDIA
 ===================
 */
 
-.theme-media .menu-meta {       
+.theme-media .menu-meta {
     /* this style seems specific to media, if there are any other applications, move to GAIA THEME section */
-    color: var(--color-brand-alpha);
-    font-style: italic;
-    font-weight: lighter;
-    font-size: var(--font-small);
+  color: var(--color-brand-alpha);
+  font-size: var(--font-small);
+  font-weight: lighter;
+  font-style: italic;
 }
+
